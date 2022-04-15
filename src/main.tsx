@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { RecoilRoot } from 'recoil';
 import { BrowserRouter } from 'react-router-dom';
 import AppRouters from './routes';
 import './index.css';
 import '~/styles/reset.scss';
-
-import { RecoilRoot } from 'recoil';
 
 ReactDOM.render(
   <React.StrictMode>
