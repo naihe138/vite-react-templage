@@ -1,4 +1,4 @@
-import { Suspense, lazy, LazyExoticComponent } from 'react';
+import { Suspense, lazy, LazyExoticComponent, FC } from 'react';
 import type { RouteObject } from 'react-router-dom';
 import { useRoutes } from 'react-router-dom';
 
@@ -7,7 +7,7 @@ const Home = lazy(() => import('../pages/home/index'));
 const About = lazy(() => import('../pages/about/index'));
 const NoMatch = lazy(() => import('../pages/noMatch/index'));
 
-const addPageLoading = (PageComponent: LazyExoticComponent<() => JSX.Element>) => (
+const addPageLoading = (PageComponent: LazyExoticComponent<FC>) => (
   <Suspense fallback={<>...</>}>
     <PageComponent />
   </Suspense>

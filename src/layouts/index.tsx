@@ -1,5 +1,6 @@
+import { FC } from 'react';
 import { Outlet, Link, useNavigate } from 'react-router-dom';
-const Layout = () => {
+const Layout: FC = () => {
   const navigate = useNavigate();
 
   return (
