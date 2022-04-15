@@ -28,9 +28,9 @@
       "~/hooks/*": ["./src/hooks/*"],
       "~/store/*": ["./src/store/*"]
     },
-    "typeRoots": ["./typings/"]
+    "typeRoots": ["./types/"]
   },
-  "include": ["src"],
+  "include": ["src", "types/**/*.d.ts"],
   "exclude": ["node_modules"],
   "references": [
     {
